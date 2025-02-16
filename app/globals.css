@@ -19,3 +19,77 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.star {
+  @apply absolute bg-purple-300 rounded-full;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+.star:nth-child(3n) { @apply bg-purple-400; animation-duration: 4s; }
+.star:nth-child(5n) { @apply bg-pink-300; animation-delay: -1s; }
+.star:nth-child(7n) { animation-duration: 5s; }
+
+/* Hero section'a sabit yükseklik ve overflow ayarı */
+section:first-of-type {
+  @apply h-screen overflow-hidden;
+}
+
+@keyframes section-transition {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  animation: section-transition 0.8s ease-out forwards;
+}
+
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.4s; }
+section:nth-child(4) { animation-delay: 0.6s; }
+
+.project-image {
+  @apply opacity-90 transition-all duration-300;
+  filter: grayscale(30%) contrast(110%) brightness(90%) saturate(120%) hue-rotate(10deg) sepia(10%);
+}
+
+.group:hover .project-image {
+  @apply opacity-100;
+  filter: grayscale(0%) contrast(120%) hue-rotate(-5deg);
+}
+
+/* Boyutlandırma */
+.object-cover {
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* İkon renklerini override etmek için */
+svg {
+  @apply text-purple-400;
+}
+
+svg:hover {
+  @apply text-purple-300;
+}
+
+/* Smooth scroll */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Özel animasyon için */
+@keyframes smoothScroll {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+section {
+  animation: smoothScroll 0.8s ease-out forwards;
+}
