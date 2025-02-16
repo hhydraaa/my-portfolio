@@ -7,7 +7,7 @@
 
 **A cutting-edge developer portfolio showcasing technical excellence and design sophistication.** This project demonstrates advanced web development capabilities while maintaining exceptional performance and accessibility.
 
-![Portfolio Preview](/public/preview.png)
+![Portfolio Preview](https://hhydraaa.github.io)
 
 ## 🌟 Key Features
 
