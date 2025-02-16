@@ -55,16 +55,6 @@ npm run build
 Deploy to GitHub Pages
 npm run deploy
 
-## 🔍 Project Structure
-├── app/ # Next.js 13+ App Router
-│ ├── components/ # Reusable components
-│ ├── api/ # API routes
-│ └── page.tsx # Main page component
-├── public/ # Static assets
-├── styles/ # Global CSS configurations
-├── .github/ # CI/CD workflows
-└── next.config.js # Build optimizations
-
 ## 📜 License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
