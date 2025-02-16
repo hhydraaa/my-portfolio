@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Stars from "@/components/Stars";
 import ScrollAnimation from "./components/ScrollAnimation";
-import { title } from "process";
 
 export default function Home() {
   const projects = [
