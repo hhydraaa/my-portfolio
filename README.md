@@ -1,7 +1,7 @@
 # 🚀 Batuhan Eroglu - Full Stack Developer Portfolio
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://hhydraaa.github.io)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://hhydraaa.github.io/my-portfolio)
 [![Next.js](https://img.shields.io/badge/Next.js-15.1.7-000000?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 
